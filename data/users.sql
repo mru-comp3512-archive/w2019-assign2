@@ -7,9 +7,9 @@ create table users (
 	city VARCHAR(50),
 	country VARCHAR(50),
 	email VARCHAR(50),
-	password VARCHAR(50),
+	password VARCHAR(100),
 	salt VARCHAR(50),
-	password_sha256 DECIMAL(10,2)
+	password_sha256 VARCHAR(100)
 );
 insert into users (id, firstname, lastname, city, country, email, password, salt, password_sha256) values (1, 'Honey', 'Kyllford', 'Calgary', 'Canada', 'hemmens0@de.vu', '$2a$12$F.jpatdVlOnrYWLi/lxPNO90T0auUpFnDP5JTb3aTx7z1QSu5nX42', '048d741e931f907110adf460816ff958', '1b7f054c4c6a92aeb1813ccf0b162cab31cdb9cad0a6cd3820a724f0819af20c');
 insert into users (id, firstname, lastname, city, country, email, password, salt, password_sha256) values (2, 'Gaylene', 'Walenta', 'Seattle', 'United States', 'gcrannage1@mit.edu', '$2a$12$o9lzPmLOFgpODyhYHUOXO.wojqkQph.fBZKO8k83hromrC0bC4TFi', '9bce2f838034b8c8d2ba1220daef2e7e', 'b3efa8c9c09f76778fdd7f70b340c69a03d48861d2424bb5f4f4cd0d7ce11c06');
