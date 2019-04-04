@@ -1,7 +1,7 @@
 drop table if exists users;
 
 create table users (
-	id INT,
+	id INT NOT NULL AUTO_INCREMENT,
 	firstname VARCHAR(50),
 	lastname VARCHAR(50),
 	city VARCHAR(50),
